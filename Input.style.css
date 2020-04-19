@@ -1,0 +1,56 @@
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.formLabel{
+    color: rgb(34, 19, 19);
+    font-family: "Bahnschrift";
+    position: relative;
+    opacity: .8;
+    top: -20px;
+    left: 10px;
+    z-index: -1;
+    transition: ease-in-out all .25s;
+
+}
+
+.formInput{
+    border: 0;
+    border-bottom: 1px solid #380e7a;
+    font-size: 1rem;
+    background-color: transparent;
+    color: rgb(34, 19, 19);
+
+}
+.formInput:focus{
+    border-color: #ee2979;
+}
+
+.formInput:focus ~ .formLabel{
+    top: -50px;
+    left: -20px;
+    opacity: .8;
+
+}
+
+.active{
+    top: -50px;
+    left: -20px;
+    opacity: .9;
+}
+.formInput:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.err{
+    color: #ee2979;
+    margin: -10px 0 10px 0;
+    font-family: "Bahnschrift";
+    font-size: 12px;
+
+}
+
